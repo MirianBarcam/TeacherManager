@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TeacherManager.Views.LoginPage"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <ScrollView
+            BindingContext="{Binding Login}">
+        <StackLayout>
+            <StackLayout>
+                <Entry
+                    Placeholder="Name"
+                    Text="{Binding Email}"/>
+
+
+                <Entry
+                    Placeholder="password"
+                    Text="{Binding Password}"/>
+
+
+                <Button
+                    Text="Login"
+                    Command="{Binding LoginCommand}"/>
+
+
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
